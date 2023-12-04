@@ -4,23 +4,23 @@ The Kmeanslib header file encapsulates the functionality for the K-means cluster
 Methods
 
     Public Methods
-    Constructor (Kmeanslib):
+        Constructor (Kmeanslib):
 
-        Initializes the K-means clustering algorithm with specified centroid points, dimensions, and initial data.
-    
-    fit Method:
-
-        Fits the provided points into the coordinate system.
-        Updates the cluster centers by adding new points.
-
-    predict Method:
-
-        Determines the cluster to which a given input point belongs.
+            Initializes the K-means clustering algorithm with specified centroid points, dimensions, and initial data.
         
-    addNewPoint Method:
+        fit Method:
 
-        Adds a new point to the cluster of previously added points.
-        Updates the centers of each cluster.
+            Fits the provided points into the coordinate system.
+            Updates the cluster centers by adding new points.
+
+        predict Method:
+
+            Determines the cluster to which a given input point belongs.
+            
+        addNewPoint Method:
+
+            Adds a new point to the cluster of previously added points.
+            Updates the centers of each cluster.
 
     Private Methods
         getUpdatedCentroid:
