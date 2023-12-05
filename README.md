@@ -25,13 +25,15 @@ Methods
     Private Methods
         getUpdatedCentroid:
 
-        Retrieves the updated centroid points of clusters.
+            Retrieves the updated centroid points of clusters.
+        
         euclideanDistance Method:
 
-        Calculates the Euclidean distance between two points.
+            Calculates the Euclidean distance between two points.
+        
         getDiffTolerance Method:
 
-        Iterates until the new centroids are stabilized, i.e., not changed significantly.
+            Iterates until the new centroids are stabilized, i.e., not changed significantly.
 
     Utility Functions
         swap Method:
