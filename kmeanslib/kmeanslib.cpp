@@ -65,7 +65,10 @@ QVector<QVector<double>> Kmeanslib::getUpdatedCentroid(QVector<std::unordered_ma
     }
     for(int i = 0; i< sizeCentroid; i++){
         QVector<double> centroidNew(this->dimensions, 0.0);
-        if(cp[i].empty()) break;
+        if(cp[i].empty()){
+            nCent.push_back(this->centroids.at(i));
+            continue;
+        }
         for(auto& p: cp[i]){
             for(int j=0; j<this->dimensions; j++){
                 centroidNew[j] += p.at(j);
